@@ -1,0 +1,769 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Broke Bartenders | Moving, Junk Removal &amp; Handyman – Memphis</title>
+  <meta name="description" content="Fast help with moving, junk removal, delivery, assembly, and small jobs in Memphis. Get a quote in under a minute.">
+
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Two Broke Bartenders | Moving, Junk Removal &amp; Handyman – Memphis">
+  <meta property="og:description" content="Fast help with moving, junk removal, delivery, assembly, and small jobs in Memphis. Get a quote in under a minute.">
+  <meta property="og:image" content="/og-image.png">
+  <meta property="og:url" content="https://twobrokebartenders.com">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Two Broke Bartenders | Moving, Junk Removal &amp; Handyman – Memphis">
+  <meta name="twitter:description" content="Fast help with moving, junk removal, delivery, assembly, and small jobs in Memphis. Get a quote in under a minute.">
+  <meta name="twitter:image" content="/og-image.png">
+
+
+  <link rel="icon" type="image/png" href="/logo.png">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+
+    :root {
+      --red:        #E31E24;
+      --red-dark:   #B71519;
+      --red-soft:   #FEE2E2;
+      --blue:       #3B76AA;
+      --blue-soft:  #E0EDF7;
+      --green:      #3E9A3E;
+      --green-soft: #DCF0DC;
+      --ink:        #0F1729;
+      --body:       #374151;
+      --muted:      #6B7280;
+      --border:     #E5E7EB;
+      --bg-alt:     #F7F8FA;
+      --white:      #FFFFFF;
+      --radius:     12px;
+      --radius-lg:  16px;
+      --shadow-sm:  0 1px 2px rgba(15,23,41,0.05);
+      --shadow:     0 4px 16px rgba(15,23,41,0.08);
+      --shadow-red: 0 10px 24px rgba(227,30,36,0.28);
+    }
+
+
+    html { scroll-behavior: smooth; }
+
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--body);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+
+    /* ── NAV ── */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 62px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+
+    .nav-brand {
+      font-weight: 900;
+      font-size: 0.9375rem;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: -0.025em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nav-brand img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      box-shadow: var(--shadow-sm);
+      display: block;
+    }
+    .nav-brand-text { display: none; }
+    @media (min-width: 460px) { .nav-brand-text { display: inline; } }
+
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--red);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.875rem;
+      padding: 9px 16px;
+      border-radius: 999px;
+      transition: background 0.15s, box-shadow 0.15s;
+      white-space: nowrap;
+      box-shadow: 0 3px 10px rgba(227,30,36,0.22);
+    }
+    .nav-cta:hover {
+      background: var(--red-dark);
+      box-shadow: 0 5px 14px rgba(227,30,36,0.32);
+    }
+
+
+    /* ── BUTTONS ── */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      background: var(--red);
+      color: white;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.0625rem;
+      padding: 17px 32px;
+      border-radius: 999px;
+      transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+      letter-spacing: -0.01em;
+      box-shadow: var(--shadow-red);
+    }
+    .btn-primary:hover {
+      background: var(--red-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 14px 30px rgba(227,30,36,0.36);
+    }
+
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: white;
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.0625rem;
+      padding: 16px 26px;
+      border-radius: 999px;
+      border: 2px solid var(--border);
+      transition: border-color 0.15s, transform 0.1s;
+      letter-spacing: -0.01em;
+    }
+    .btn-outline:hover {
+      border-color: var(--ink);
+      transform: translateY(-1px);
+    }
+
+
+    /* ── LAYOUT ── */
+    .container { max-width: 1040px; margin: 0 auto; }
+    .container-narrow { max-width: 880px; margin: 0 auto; }
+
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      padding: 64px 24px 80px;
+      text-align: center;
+      overflow: hidden;
+      isolation: isolate;
+      background:
+        radial-gradient(700px 380px at 20% 10%, rgba(59,118,170,0.10), transparent 60%),
+        radial-gradient(640px 360px at 85% 20%, rgba(62,154,62,0.09), transparent 60%),
+        radial-gradient(560px 320px at 50% 110%, rgba(227,30,36,0.08), transparent 70%),
+        var(--white);
+    }
+
+
+    .hero-logo {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 28px;
+      box-shadow: 0 8px 28px rgba(15,23,41,0.12);
+    }
+
+
+    .hero h1 {
+      font-size: clamp(2.25rem, 7vw, 3.625rem);
+      font-weight: 900;
+      color: var(--ink);
+      letter-spacing: -0.035em;
+      line-height: 1.05;
+      margin-bottom: 16px;
+    }
+
+
+    .hero-sub {
+      font-size: clamp(1.0625rem, 2.5vw, 1.25rem);
+      color: var(--ink);
+      font-weight: 600;
+      max-width: 620px;
+      margin: 0 auto 18px;
+      line-height: 1.45;
+      letter-spacing: -0.015em;
+    }
+
+
+    .hero-copy {
+      font-size: 1.0625rem;
+      color: var(--muted);
+      max-width: 560px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+
+
+    .cta-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    @media (min-width: 480px) {
+      .cta-group { flex-direction: row; justify-content: center; }
+    }
+
+
+    .microcopy {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px 22px;
+      font-size: 0.875rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .microcopy span { display: inline-flex; align-items: center; gap: 6px; }
+    .microcopy .ck {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      background: var(--green);
+      color: white;
+      border-radius: 50%;
+      font-size: 0.6875rem;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+
+    /* ── SECTION HEAD ── */
+    .section-head {
+      text-align: center;
+      max-width: 580px;
+      margin: 0 auto 40px;
+    }
+
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 12px;
+      padding: 5px 12px;
+      background: var(--red-soft);
+      border-radius: 999px;
+    }
+    .eyebrow.b { color: var(--blue); background: var(--blue-soft); }
+    .eyebrow.g { color: var(--green); background: var(--green-soft); }
+
+
+    .section-heading {
+      font-size: clamp(1.75rem, 4.2vw, 2.375rem);
+      font-weight: 900;
+      color: var(--ink);
+      letter-spacing: -0.035em;
+      line-height: 1.1;
+    }
+
+
+    /* ── SERVICES ── */
+    .services { background: var(--bg-alt); padding: 80px 24px; }
+
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    @media (min-width: 560px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 880px) { .services-grid { grid-template-columns: repeat(3, 1fr); } }
+
+
+    .service-card {
+      position: relative;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 26px 24px 24px;
+      transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+    }
+    .service-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+      border-color: #D1D5DB;
+    }
+
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--red-soft);
+      color: var(--red);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    .service-icon svg { width: 24px; height: 24px; }
+    .service-card.b .service-icon { background: var(--blue-soft); color: var(--blue); }
+    .service-card.g .service-icon { background: var(--green-soft); color: var(--green); }
+
+
+    .service-card h3 {
+      font-size: 1.0625rem;
+      font-weight: 800;
+      color: var(--ink);
+      margin-bottom: 6px;
+      letter-spacing: -0.015em;
+    }
+
+
+    .service-card p {
+      font-size: 0.9375rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+
+    /* ── HOW IT WORKS ── */
+    .how-it-works { padding: 80px 24px; background: white; }
+
+
+    .steps {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    @media (min-width: 720px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+
+
+    .step {
+      padding: 26px 22px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+    }
+
+
+    .step-num {
+      width: 40px;
+      height: 40px;
+      background: var(--red);
+      color: white;
+      border-radius: 12px;
+      font-weight: 900;
+      font-size: 1.0625rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    .step:nth-child(2) .step-num { background: var(--blue); }
+    .step:nth-child(3) .step-num { background: var(--green); }
+
+
+    .step h3 {
+      font-size: 1.0625rem;
+      font-weight: 800;
+      color: var(--ink);
+      letter-spacing: -0.015em;
+      margin-bottom: 6px;
+    }
+    .step p { font-size: 0.9375rem; color: var(--muted); line-height: 1.55; }
+
+
+    .time-callout {
+      margin-top: 28px;
+      padding: 14px 18px;
+      background: var(--blue-soft);
+      border-radius: var(--radius);
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: #1F4F78;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      text-align: center;
+    }
+    .time-callout svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+
+    /* ── WHY US ── */
+    .why-us { background: var(--bg-alt); padding: 80px 24px; }
+
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    @media (min-width: 560px) { .why-grid { grid-template-columns: repeat(2, 1fr); } }
+
+
+    .why-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 18px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .why-item .ck {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      background: var(--green);
+      color: white;
+      border-radius: 50%;
+      font-size: 0.75rem;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+
+    /* ── SERVICE AREA ── */
+    .service-area {
+      background: var(--ink);
+      padding: 64px 24px;
+      text-align: center;
+      color: white;
+    }
+    .service-area .eyebrow { background: rgba(255,255,255,0.10); color: #FCA5A5; }
+    .service-area h2 {
+      font-size: clamp(1.625rem, 4vw, 2.125rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+      color: white;
+    }
+    .service-area p { color: #C9CDD6; font-size: 1rem; max-width: 460px; margin: 0 auto; line-height: 1.6; }
+
+
+    /* ── FINAL CTA ── */
+    .final-cta { padding: 88px 24px; text-align: center; background: white; }
+
+
+    .final-cta-inner {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+
+    .final-cta h2 {
+      font-size: clamp(2rem, 5.2vw, 2.625rem);
+      font-weight: 900;
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
+      line-height: 1.05;
+    }
+    .final-cta .sub {
+      color: var(--muted);
+      font-size: 1.0625rem;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bg-alt);
+      border-top: 1px solid var(--border);
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    footer .fbrand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      font-size: 0.9375rem;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+    footer .fbrand img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    footer p { font-size: 0.875rem; line-height: 1.7; color: var(--muted); }
+    footer a {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+    }
+    footer a:hover { border-color: var(--red); color: var(--red); }
+    .fdot { color: #9CA3AF; margin: 0 6px; }
+  </style>
+</head>
+<body>
+
+
+<!-- ── STICKY NAV ── -->
+<nav class="site-nav">
+  <a href="#top" class="nav-brand">
+    <img src="/logo.png" alt="">
+    <span class="nav-brand-text">Two Broke Bartenders</span>
+  </a>
+  <a href="https://node-helper--tcbmem.replit.app/quote" class="nav-cta">Get a Quote</a>
+</nav>
+
+
+<!-- ── HERO ── -->
+<section id="top" class="hero">
+  <div class="container-narrow">
+    <img src="/logo.png" alt="Two Broke Bartenders" class="hero-logo">
+    <h1>Two Broke Bartenders</h1>
+    <p class="hero-sub">Moving, Assembly, Handyman &amp; Junk Removal in Greater Memphis</p>
+    <p class="hero-copy">Need help moving something, hauling something off, assembling something, or knocking out a small project? Send us the details and we'll get you a quote fast.</p>
+
+
+    <div class="cta-group">
+      <a href="https://node-helper--tcbmem.replit.app/quote" class="btn-primary">Get a Quote &rarr;</a>
+      <a href="tel:+16625988975" class="btn-outline">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        Call or Text
+      </a>
+    </div>
+
+
+    <div class="microcopy">
+      <span><span class="ck">&#10003;</span>Takes about 60 seconds</span>
+      <span><span class="ck">&#10003;</span>No account needed</span>
+      <span><span class="ck">&#10003;</span>We'll follow up quickly</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── SERVICES ── -->
+<section class="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What We Do</span>
+      <h2 class="section-heading">Services</h2>
+    </div>
+
+
+    <div class="services-grid">
+
+
+      <div class="service-card">
+        <span class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="1" y="6" width="13" height="10" rx="1.5"></rect>
+            <path d="M14 9h4l3 3v4h-7"></path>
+            <circle cx="6" cy="18" r="2"></circle>
+            <circle cx="17" cy="18" r="2"></circle>
+          </svg>
+        </span>
+        <h3>Small Moves</h3>
+        <p>Studio, single room, or a few pieces of furniture &mdash; moves the bigger companies skip.</p>
+      </div>
+
+
+      <div class="service-card b">
+        <span class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+          </svg>
+        </span>
+        <h3>Furniture &amp; Item Delivery</h3>
+        <p>Pick up and deliver furniture, appliances, or oversized items anywhere in the Memphis area.</p>
+      </div>
+
+
+      <div class="service-card g">
+        <span class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="3 6 5 6 21 6"></polyline>
+            <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"></path>
+            <path d="M10 11v6"></path>
+            <path d="M14 11v6"></path>
+            <path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"></path>
+          </svg>
+        </span>
+        <h3>Junk Removal</h3>
+        <p>Old furniture, appliances, clutter &mdash; we haul it away clean so you don't have to deal with it.</p>
+      </div>
+
+
+      <div class="service-card">
+        <span class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14.7 6.3a4 4 0 0 0 5 5L21 13l-8 8a2.83 2.83 0 0 1-4-4l8-8 1.7-1.7z"></path>
+            <path d="M9 11L3 17a2.83 2.83 0 0 0 4 4l6-6"></path>
+          </svg>
+        </span>
+        <h3>Assembly</h3>
+        <p>IKEA, Wayfair, Amazon &mdash; we put it together right the first time, no frustration required.</p>
+      </div>
+
+
+      <div class="service-card b">
+        <span class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M15 12l-8.5 8.5a2.12 2.12 0 0 1-3-3L12 9"></path>
+            <path d="M17.6 6.4l-3-3a2 2 0 0 0-2.8 0L9 6.2l5.8 5.8 2.8-2.8a2 2 0 0 0 0-2.8z"></path>
+            <path d="M14.8 12L21 5.8"></path>
+          </svg>
+        </span>
+        <h3>Light Handyman Help</h3>
+        <p>Small repairs, mounting, installation, and around-the-house tasks done right.</p>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ── HOW IT WORKS ── -->
+<section class="how-it-works">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow b">Simple Process</span>
+      <h2 class="section-heading">How It Works</h2>
+    </div>
+
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Tell us what you need</h3>
+        <p>Fill out a short form &mdash; no account, no commitment. Just the basics about your job.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>We review and send a quote</h3>
+        <p>We look over the details and follow up with a clear, honest quote. No surprises.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Pay deposit, get scheduled</h3>
+        <p>A small deposit locks your spot on the calendar. We confirm and show up ready to work.</p>
+      </div>
+    </div>
+
+
+    <p class="time-callout">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10"></circle>
+        <polyline points="12 6 12 12 16 14"></polyline>
+      </svg>
+      Takes about 60 seconds to get started &mdash; the form is short and we follow up fast.
+    </p>
+  </div>
+</section>
+
+
+<!-- ── WHY US ── -->
+<section class="why-us">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow g">Why 2BB</span>
+      <h2 class="section-heading">Why Use Us</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item"><span class="ck">&#10003;</span> Local Memphis crew</div>
+      <div class="why-item"><span class="ck">&#10003;</span> Fast response</div>
+      <div class="why-item"><span class="ck">&#10003;</span> Flexible small-job help</div>
+      <div class="why-item"><span class="ck">&#10003;</span> Clear quote before scheduling</div>
+      <div class="why-item"><span class="ck">&#10003;</span> Deposit secures your spot</div>
+      <div class="why-item"><span class="ck">&#10003;</span> Real people, no runaround</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── SERVICE AREA ── -->
+<section class="service-area">
+  <div class="container-narrow">
+    <span class="eyebrow">Where We Work</span>
+    <h2>Serving the Greater Memphis Area</h2>
+    <p>We're a local crew based in Memphis. If you're nearby, we've got you covered.</p>
+  </div>
+</section>
+
+
+<!-- ── FINAL CTA ── -->
+<section class="final-cta">
+  <div class="final-cta-inner">
+    <h2>Ready to get it done?</h2>
+    <p class="sub">Send us the details &mdash; we'll get back to you with a quote fast.</p>
+    <a href="https://node-helper--tcbmem.replit.app/quote" class="btn-primary">Get a Quote &rarr;</a>
+    <div class="microcopy" style="margin-top:22px;">
+      <span><span class="ck">&#10003;</span>Takes about 60 seconds</span>
+      <span><span class="ck">&#10003;</span>No account needed</span>
+      <span><span class="ck">&#10003;</span>We'll follow up quickly</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="container">
+    <div class="fbrand">
+      <img src="/logo.png" alt="">
+      Two Broke Bartenders
+    </div>
+    <p>
+      Greater Memphis Area
+      <span class="fdot">&middot;</span>
+      <a href="tel:+16625988975">Call or Text: (662) 598-8975</a>
+    </p>
+  </div>
+</footer>
+
+
+</body>
+</html>
